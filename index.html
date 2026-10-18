@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palette Florale — fleuriste à Flize, dans les Ardennes</title>
+<meta name="description" content="Palette Florale, fleuriste au 29 rue de Mézières à Flize (08). Bouquets et compositions, plantes et orchidées, deuil, évènementiel et art déco. Boutique ouverte du mardi au dimanche matin, livraison possible.">
+<meta name="theme-color" content="#9B2B46">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239B2B46'/%3E%3Ccircle cx='16' cy='12' r='3.1' fill='%23F6DCE3'/%3E%3Ccircle cx='10.7' cy='15.6' r='3.1' fill='%23F6DCE3'/%3E%3Ccircle cx='21.3' cy='15.6' r='3.1' fill='%23F6DCE3'/%3E%3Ccircle cx='12.8' cy='21.4' r='3.1' fill='%23F6DCE3'/%3E%3Ccircle cx='19.2' cy='21.4' r='3.1' fill='%23F6DCE3'/%3E%3Ccircle cx='16' cy='16.8' r='2.3' fill='%23CA3459'/%3E%3C/svg%3E">
+<style>
+:root{
+  --framboise:#CA3459;
+  --framboise-f:#9B2B46;
+  --framboise-ff:#6E1F33;
+  --rose-pale:#F6DCE3;
+  --rose-voile:#FDF3F5;
+  --vert:#BFC084;
+  --vert-cl:#E7E9D5;
+  --vert-f:#6E7447;
+  --encre:#2A2024;
+  --encre-2:#6E6168;
+  --creme:#FDF9F7;
+  --max:1160px;
+  --r:4px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--creme);color:var(--encre);
+  font-family:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-weight:400;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond','Jost',Georgia,serif;font-weight:600;line-height:1.08;margin:0;letter-spacing:-.005em}
+p{margin:0 0 1.05em}
+p:last-child{margin-bottom:0}
+figure{margin:0}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:18px}
+.eyebrow{font-size:11.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--framboise-f);margin:0 0 16px}
+.lead{font-size:clamp(16.5px,2vw,19px);color:var(--encre-2);font-weight:300}
+
+/* header */
+.top{position:sticky;top:0;z-index:60;background:rgba(253,249,247,.94);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(155,43,70,.17)}
+.top-in{display:flex;align-items:center;gap:22px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none;min-width:0}
+.brand-mark{width:40px;height:40px;border-radius:50%;background:var(--framboise-f);display:flex;align-items:center;justify-content:center;flex:none}
+.brand-mark svg{width:24px;height:24px}
+.brand b{display:block;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:25px;letter-spacing:.005em;color:var(--framboise-f);line-height:1}
+.brand span{display:block;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--encre-2);font-weight:500;margin-top:5px}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{text-decoration:none;font-size:14px;font-weight:400;letter-spacing:.03em;color:var(--encre-2);padding-bottom:3px;border-bottom:1px solid transparent;transition:.18s}
+.nav a:hover{color:var(--framboise-f);border-bottom-color:var(--framboise)}
+.tel-btn{flex:none;display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--framboise-f);color:#fff;font-weight:500;font-size:14px;padding:12px 20px;border-radius:999px;transition:.18s;white-space:nowrap}
+.tel-btn:hover{background:var(--framboise-ff)}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--rose-voile) 0%,var(--rose-voile) 66%,var(--creme) 100%);padding-block:clamp(46px,6vw,86px) clamp(40px,5vw,66px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr minmax(240px,380px);gap:clamp(30px,5vw,70px);align-items:center}
+.hero h1{font-size:clamp(42px,6.6vw,74px);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--framboise)}
+.hero-sub{max-width:520px;margin-bottom:28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.chip{display:inline-flex;align-items:center;font-size:12.5px;font-weight:400;letter-spacing:.05em;padding:7px 15px;border-radius:999px;background:#fff;border:1px solid rgba(155,43,70,.3);color:var(--framboise-ff)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:500;font-size:15px;letter-spacing:.02em;padding:14px 26px;border-radius:999px;transition:.18s}
+.btn-p{background:var(--framboise-f);color:#fff}
+.btn-p:hover{background:var(--framboise-ff)}
+.btn-s{background:#fff;color:var(--encre);border:1px solid rgba(42,32,36,.18)}
+.btn-s:hover{border-color:var(--framboise);color:var(--framboise-ff)}
+.hero-ph{position:relative}
+.hero-ph img{width:100%;height:auto;border-radius:var(--r);box-shadow:0 30px 60px -34px rgba(110,31,51,.55)}
+
+/* proof */
+.proof{background:var(--framboise-ff);color:#fff}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.pf{padding:26px 22px;border-left:1px solid rgba(255,255,255,.16)}
+.pf:first-child{border-left:0;padding-left:0}
+.pf b{display:block;font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;line-height:1;margin-bottom:8px;color:var(--rose-pale)}
+.pf span{font-size:13.5px;color:rgba(255,255,255,.76);line-height:1.5;display:block;font-weight:300}
+
+section{padding-block:clamp(50px,6.5vw,90px)}
+.sec-head{max-width:620px;margin-bottom:clamp(30px,3.5vw,46px)}
+.sec-head h2{font-size:clamp(32px,4.6vw,50px);margin-bottom:16px}
+
+/* offres */
+.offres{background:var(--vert-cl);border-block:1px solid rgba(110,116,71,.22)}
+.og{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.o{background:#fff;border:1px solid rgba(110,116,71,.2);border-radius:var(--r);padding:28px 26px}
+.o .ic{width:34px;height:34px;color:var(--framboise-f);margin-bottom:14px}
+.o h3{font-size:25px;margin-bottom:9px}
+.o p{font-size:15.5px;color:var(--encre-2);margin:0;font-weight:300}
+
+/* galerie */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.gal figure{border-radius:var(--r);overflow:hidden}
+.gal img{width:100%;height:300px;object-fit:cover}
+.gal .wide{grid-column:span 2}
+
+/* boutique */
+.bq-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,60px);align-items:center}
+.bq-ph{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bq-ph figure{overflow:hidden;border-radius:var(--r)}
+.bq-ph img{width:100%;height:100%;object-fit:cover}
+.quote{margin-top:24px;border-left:2px solid var(--framboise);padding:4px 0 4px 20px}
+.quote p{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--encre);margin:0 0 8px;line-height:1.4}
+.quote cite{font-style:normal;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--encre-2)}
+
+/* infos */
+.infos{background:var(--framboise-ff);color:#fff}
+.infos h2{color:#fff}
+.infos .eyebrow{color:var(--rose-pale)}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+.hours{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:26px 28px;margin-bottom:22px}
+.hours h3{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-pale);font-family:'Jost',sans-serif;font-weight:500;margin-bottom:16px}
+.hrow{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:15.5px;font-weight:300}
+.hrow:last-child{border-bottom:0}
+.hrow b{font-weight:500}
+.hrow span{color:var(--rose-pale);text-align:right}
+.clist{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.clist li{display:flex;gap:14px;align-items:flex-start}
+.clist .ic{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex:none;color:var(--rose-pale)}
+.clist .ic svg{width:16px;height:16px}
+.clist .k{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);display:block;margin-bottom:3px}
+.clist .v{font-size:16px;color:#fff;font-weight:300}
+.clist a{text-decoration:none;border-bottom:1px solid rgba(246,220,227,.5)}
+.clist a:hover{color:var(--rose-pale)}
+.infos-ph img{width:100%;max-width:480px;border-radius:var(--r)}
+.infos-ph figcaption{font-size:13px;color:rgba(255,255,255,.62);margin-top:12px;font-weight:300}
+
+.aconf{display:inline-flex;align-items:center;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;background:rgba(155,43,70,.1);color:var(--framboise-f);border:1px solid rgba(155,43,70,.4);border-radius:999px;padding:3px 9px;margin-left:8px;white-space:nowrap;line-height:1.5;vertical-align:middle}
+.infos .aconf{background:rgba(255,255,255,.14);color:var(--rose-pale);border-color:rgba(246,220,227,.5)}
+
+/* footer */
+.foot{background:var(--rose-voile);color:var(--encre-2);padding-block:52px 30px;font-size:14.5px;border-top:1px solid rgba(155,43,70,.17);font-weight:300}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px;padding-bottom:30px;border-bottom:1px solid rgba(155,43,70,.17)}
+.foot h4{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--framboise-f);margin-bottom:14px;font-weight:500}
+.foot a{color:var(--encre-2);text-decoration:none}
+.foot a:hover{color:var(--framboise-f)}
+.foot ul{list-style:none;padding:0;margin:0}
+.foot li{margin-bottom:9px}
+.foot .bf b{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--framboise-f);display:block;margin-bottom:10px;font-weight:700}
+.foot-bot{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;padding-top:22px;font-size:12.5px}
+
+.demo{position:fixed;right:14px;bottom:14px;z-index:90;display:inline-flex;align-items:center;gap:8px;background:var(--encre);color:#fff;text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:10px 16px;border-radius:999px;box-shadow:0 10px 26px -12px rgba(0,0,0,.6);transition:.18s}
+.demo:hover{background:var(--framboise-f)}
+.demo i{width:6px;height:6px;border-radius:50%;background:var(--rose-pale);flex:none}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .hero-grid,.bq-grid,.ig{grid-template-columns:1fr}
+  .hero-ph,.bq-ph{order:-1}
+  .og{grid-template-columns:1fr 1fr}
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .pf{border-left:0;border-top:1px solid rgba(255,255,255,.16);padding-inline:0}
+  .pf:nth-child(-n+2){border-top:0}
+  .gal{grid-template-columns:1fr 1fr}
+  .gal .wide{grid-column:span 2}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top-in{height:66px;gap:10px}
+  .brand b{font-size:21px}
+  .brand span{display:none}
+  .brand-mark{width:34px;height:34px}
+  .tel-btn{margin-left:auto;padding:10px 15px;font-size:13px}
+  .og,.proof .wrap,.foot-grid{grid-template-columns:1fr}
+  .pf{border-top:1px solid rgba(255,255,255,.16)}
+  .pf:first-child{border-top:0}
+  .gal{grid-template-columns:1fr}
+  .gal .wide{grid-column:span 1}
+  .gal img{height:260px}
+  .bq-ph{grid-template-columns:1fr}
+  .demo{right:10px;bottom:10px;font-size:10px;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="3.4" fill="#F6DCE3"/><circle cx="10.4" cy="15.2" r="3.4" fill="#F6DCE3"/><circle cx="21.6" cy="15.2" r="3.4" fill="#F6DCE3"/><circle cx="12.6" cy="21.6" r="3.4" fill="#F6DCE3"/><circle cx="19.4" cy="21.6" r="3.4" fill="#F6DCE3"/><circle cx="16" cy="16.4" r="2.5" fill="#CA3459"/></svg>
+      </span>
+      <span>
+        <b>Palette Florale</b>
+        <span>Fleuriste · Flize (08)</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#savoir-faire">Le savoir-faire</a>
+      <a href="#boutique">La boutique</a>
+      <a href="#occasions">Les occasions</a>
+      <a href="#infos">Nous trouver</a>
+    </nav>
+    <a class="tel-btn" href="tel:+33324540033">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      03 24 54 00 33
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Fleuriste à Flize, dans les Ardennes</p>
+      <h1>Des fleurs choisies <em>une par une</em></h1>
+      <p class="lead hero-sub">Au 29 rue de Mézières, entre Charleville et Sedan, Palette Florale compose depuis 2020 des bouquets, des plantes et des pièces pour les grandes occasions. Tout se fait à la boutique, sur commande ou au coup de cœur.</p>
+      <div class="chips">
+        <span class="chip">Bouquets et compositions</span>
+        <span class="chip">Plantes et orchidées</span>
+        <span class="chip">Deuil</span>
+        <span class="chip">Évènementiel</span>
+        <span class="chip">Art déco</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-p" href="#infos">Horaires et adresse</a>
+        <a class="btn btn-s" href="#savoir-faire">Voir le savoir-faire</a>
+      </div>
+    </div>
+    <figure class="hero-ph">
+      <img src="alliums.jpg" width="900" height="1600" alt="Composition d'alliums violets et de gerberas dans la boutique Palette Florale">
+    </figure>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap">
+    <div class="pf"><b>4,5 / 5</b><span>sur 85 avis Google</span></div>
+    <div class="pf"><b>100 %</b><span>de recommandations sur Facebook</span></div>
+    <div class="pf"><b>501</b><span>abonnés suivent la boutique</span></div>
+    <div class="pf"><b>Dimanche</b><span>la boutique est ouverte le matin</span></div>
+  </div>
+</div>
+
+<section id="savoir-faire" class="offres">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Le savoir-faire</p>
+      <h2>Fleurs, plantes, art déco et évènementiel</h2>
+      <p class="lead">Quatre métiers sous la même enseigne, c'est ce qui est écrit sur la carte de visite de la boutique. Dans les faits, cela veut dire qu'on peut venir chercher un bouquet à dix euros comme confier la décoration florale d'une journée entière.</p>
+    </div>
+    <div class="og">
+      <article class="o">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.4" r="2.6"/><circle cx="8" cy="11.4" r="2.6"/><circle cx="16" cy="11.4" r="2.6"/><circle cx="9.5" cy="15.6" r="2.6"/><circle cx="14.5" cy="15.6" r="2.6"/><path d="M12 18.4V22"/></svg></span>
+        <h3>Les bouquets</h3>
+        <p>Bouquets ronds, bouquets de saison, compositions en coupe ou en panier. Faits devant vous, ou préparés pour l'heure que vous donnez.</p>
+      </article>
+      <article class="o">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9C12 6 9.8 3.5 6.6 3.5 6.6 7 9 9 12 9z"/><path d="M12 13c0-2.6 2-4.6 4.8-4.6C16.8 11.3 14.7 13 12 13z"/><path d="M8 21h8"/></svg></span>
+        <h3>Les plantes</h3>
+        <p>Orchidées, plantes vertes et plantes fleuries, avec le conseil qui va avec : où la poser, quand l'arroser, comment la tuteurer.</p>
+      </article>
+      <article class="o">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5S3.8 14.8 3.8 9.4A4.6 4.6 0 0 1 12 6.6a4.6 4.6 0 0 1 8.2 2.8c0 5.4-8.2 11.1-8.2 11.1z"/></svg></span>
+        <h3>Le deuil</h3>
+        <p>Cœurs, coussins, raquettes et gerbes, montés dans la journée quand il le faut, et livrés à l'heure de la cérémonie.</p>
+      </article>
+      <article class="o">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9.5l8-5.5 8 5.5V20"/><path d="M4 20h16"/><circle cx="12" cy="13.5" r="2.4"/></svg></span>
+        <h3>L'évènementiel<span class="aconf">à préciser</span></h3>
+        <p>Mariages, baptêmes, anniversaires : décoration de salle, bouquets de mariée, centres de table et fleurissement sur place.</p>
+      </article>
+      <article class="o">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 15l4.6-4.3 3.6 3.3 3-2.7 5.8 5"/><circle cx="9" cy="9" r="1.3"/></svg></span>
+        <h3>L'art déco</h3>
+        <p>Vases, cache-pots, objets et petites pièces pour la maison, choisis pour aller avec les fleurs plutôt que pour remplir un rayon.</p>
+      </article>
+      <article class="o">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.5h11v9h-11z"/><path d="M13.5 10.5h4l3.5 3v3h-7.5z"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></span>
+        <h3>La livraison<span class="aconf">zone à confirmer</span></h3>
+        <p>Livraison possible depuis la boutique, pour un anniversaire comme pour une cérémonie.</p>
+      </article>
+    </div>
+    <div class="gal">
+      <figure><img src="paradis.jpg" width="900" height="1200" alt="Composition d'oiseaux de paradis et d'anthuriums"></figure>
+      <figure class="wide"><img src="bouquet.jpg" width="1200" height="752" alt="Bouquet coloré de roses, gerberas et œillets préparé en boutique"></figure>
+      <figure><img src="panier.jpg" width="900" height="938" alt="Composition pastel dans un panier d'osier"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="boutique">
+  <div class="wrap bq-grid">
+    <div>
+      <p class="eyebrow">La boutique</p>
+      <h2>Un magasin où l'on entre pour regarder</h2>
+      <p class="lead">Les seaux sont dehors dès l'ouverture, les plantes occupent le fond, et les objets de déco circulent entre les deux. On peut venir sans rien savoir de ce qu'on cherche, c'est même souvent comme ça que ça commence.</p>
+      <p>Palette Florale a ouvert en 2020 au 29 rue de Mézières, à Flize. La boutique est tenue par Aurélie D'Agostini, qui répond elle-même à chaque avis laissé en ligne.</p>
+      <div class="quote">
+        <p>« Je suis venu me renseigner sur des tuteurs et j'ai reçu des conseils clairs et utiles. On sent que la personne connaît bien son métier et prend le temps d'expliquer. »</p>
+        <cite>Avis Google, mai 2026</cite>
+      </div>
+    </div>
+    <div class="bq-ph">
+      <figure><img src="boutique.jpg" width="900" height="1600" alt="Les seaux de fleurs coupées à l'entrée de la boutique"></figure>
+      <figure><img src="orchidees.jpg" width="900" height="1172" alt="Orchidées et plantes d'intérieur dans la boutique"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="occasions" style="background:var(--rose-voile);border-block:1px solid rgba(155,43,70,.17)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Les grandes occasions</p>
+      <h2>Ce qui se prépare à l'avance, et ce qui se monte dans la journée</h2>
+      <p class="lead">Une naissance, un anniversaire, un départ : on prévient quelques jours avant et la pièce est prête. Pour un deuil, c'est l'inverse : il faut aller vite, et la boutique le sait.</p>
+    </div>
+    <div class="gal">
+      <figure class="wide"><img src="coeur.jpg" width="1200" height="1013" alt="Cœur de roses rouges, roses et blanches monté à la boutique"></figure>
+      <figure class="wide"><img src="deuil.jpg" width="1200" height="787" alt="Deux cœurs de deuil en roses rouges et blanches"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="infos" class="infos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Nous trouver</p>
+      <h2>29 rue de Mézières, 08160 Flize</h2>
+    </div>
+    <div class="ig">
+      <div>
+        <div class="hours">
+          <h3>Horaires de la boutique</h3>
+          <div class="hrow"><b>Lundi</b><span>Fermé</span></div>
+          <div class="hrow"><b>Mardi</b><span>9 h 15 à 13 h 00</span></div>
+          <div class="hrow"><b>Mercredi</b><span>9 h 15 à 12 h 15<br>14 h 15 à 18 h 45</span></div>
+          <div class="hrow"><b>Jeudi</b><span>9 h 15 à 12 h 15<br>14 h 15 à 18 h 45</span></div>
+          <div class="hrow"><b>Vendredi</b><span>9 h 15 à 12 h 15<br>14 h 15 à 18 h 45</span></div>
+          <div class="hrow"><b>Samedi</b><span>10 h 00 à 12 h 30<br>14 h 30 à 19 h 00</span></div>
+          <div class="hrow"><b>Dimanche</b><span>10 h 00 à 12 h 30</span></div>
+        </div>
+        <ul class="clist">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><span class="k">Boutique</span><span class="v"><a href="tel:+33324540033">03 24 54 00 33</a></span></span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span><span><span class="k">Portable</span><span class="v"><a href="tel:+33681114555">06 81 11 45 55</a></span></span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></span><span><span class="k">Courriel</span><span class="v"><a href="mailto:paletteflorale@orange.fr">paletteflorale@orange.fr</a></span></span></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5h17v10h-17z"/><path d="M3.5 9.5 5 4.5h14l1.5 5"/><path d="M9 13h6"/></svg></span><span><span class="k">Sur place</span><span class="v">Achats en magasin, retrait et livraison</span></span></li>
+        </ul>
+      </div>
+      <figure class="infos-ph">
+        <img src="devanture.jpg" width="440" height="501" alt="La devanture de Palette Florale, 29 rue de Mézières à Flize">
+        <figcaption>La boutique occupe les deux vitrines du 29 rue de Mézières, sur la route qui traverse Flize.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="bf">
+        <b>Palette Florale</b>
+        <p>Fleuriste à Flize, dans les Ardennes, depuis 2020. Fleurs, plantes, art déco et évènementiel. Partenaire de La Jeunesse Sapognarde.</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <ul>
+          <li><a href="#savoir-faire">Le savoir-faire</a></li>
+          <li><a href="#boutique">La boutique</a></li>
+          <li><a href="#occasions">Les occasions</a></li>
+          <li><a href="#infos">Nous trouver</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33324540033">03 24 54 00 33</a></li>
+          <li><a href="mailto:paletteflorale@orange.fr">paletteflorale@orange.fr</a></li>
+          <li><a href="https://www.facebook.com/people/Palette-Florale/100063753450944/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Palette Florale · Aurélie D'Agostini</span>
+      <span>29 rue de Mézières, 08160 Flize · Fermé le lundi</span>
+    </div>
+  </div>
+</footer>
+
+<a class="demo" href="https://kraon.netlify.app/offre" target="_blank" rel="noopener"><i></i>Démo KRAON</a>
+
+</body>
+</html>
